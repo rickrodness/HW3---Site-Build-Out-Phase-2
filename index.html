@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing projects, skills, and research at UCSD.">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="Showcasing my computer science journey, projects, and research at UCSD.">
+    <meta property="og:image" content="example.jpg">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Welcome to My Portfolio</h1>
+            <p>This site showcases my <strong>projects</strong>, <em>skills</em>, and research at UCSD in computer science.</p>
+            <abbr title="HyperText Markup Language">HTML</abbr> is used to build this site.
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <article>
+                <h3>Project 1</h3>
+                <p>Description of <b>project 1</b>.</p>
+                <a href="#">View Project</a>
+            </article>
+
+            <article>
+                <h3>Project 2</h3>
+                <p>Description of <i>project 2</i>.</p>
+                <a href="#">View Project</a>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Quick Facts</h2>
+            <p><dfn title="University of California, San Diego">UCSD</dfn> research projects in computer graphics and machine learning.</p>
+        </aside>
+
+        <section>
+            <h2>Experiments</h2>
+            <details>
+                <summary>Click to Expand</summary>
+                <p>This section demonstrates various HTML tags.</p>
+                <hr>
+                <blockquote cite="https://www.example.com">"The best way to predict the future is to invent it."</blockquote>
+                <figure>
+                    <img src="example.jpg" alt="Example Image">
+                    <figcaption>Sample Image Caption</figcaption>
+                </figure>
+                <pre><code>console.log('Code Block Example');</code></pre>
+                <table>
+                    <caption>Sample Table</caption>
+                    <colgroup>
+                        <col span="2">
+                    </colgroup>
+                    <tr><th>Item</th><th>Value</th></tr>
+                    <tr><td>HTML</td><td>Markup Language</td></tr>
+                </table>
+                <form>
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+                <select>
+                    <optgroup label="Skills">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+                </select>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                </svg>
+                <template>
+                    <p>This is a template content.</p>
+                </template>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msup><mi>E</mi><mn>=</mn></msup>
+                    <mi>mc</mi><msup><mn>2</mn></msup>
+                </math>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <address>Contact me at <a href="mailto:email@example.com">email@example.com</a></address>
+    </footer>
+
+    <!-- Custom Elements -->
+    <semantic-box>Semantic Custom Element Example</semantic-box>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world!");
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <hello-world></hello-world>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>
