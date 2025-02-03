@@ -1,0 +1,40 @@
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid black; /* Allowed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Custom Semantic Element - highlight-box */
+highlight-box {
+    display: block;
+    border: 1px solid black; /* Allowed */
+    padding: 10px;
+    margin: 15px 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+}
+

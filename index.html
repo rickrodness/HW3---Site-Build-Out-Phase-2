@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!-- html tag -->
+<html lang="en"> <!-- html tag -->
+<head> <!-- head tag -->
+    <meta charset="UTF-8"> <!-- meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio showcasing projects, skills, and research at UCSD.">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="Showcasing my computer science journey, projects, and research at UCSD.">
-    <meta property="og:image" content="example.jpg">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title> <!-- title tag -->
+    <link rel="stylesheet" href="styles.css"> <!-- link tag to external CSS -->
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+<body> <!-- body tag -->
+    <header> <!-- header tag -->
+        <nav> <!-- nav tag -->
+            <ul> <!-- ul tag -->
+                <li> <!-- li tag -->
+                    <a href="index.html">Home</a> <!-- a tag -->
+                </li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -24,78 +23,94 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Welcome to My Portfolio</h1>
-            <p>This site showcases my <strong>projects</strong>, <em>skills</em>, and research at UCSD in computer science.</p>
-            <abbr title="HyperText Markup Language">HTML</abbr> is used to build this site.
+    <main> <!-- main tag -->
+        <section> <!-- section tag -->
+            <h1>Welcome to My Portfolio</h1> <!-- h1 tag -->
+            <p>This site showcases my <strong>projects</strong>, <em>skills</em>, and research at UCSD in computer science.</p> <!-- p, strong, em tags -->
+            <abbr title="HyperText Markup Language">HTML</abbr> <!-- abbr tag -->
         </section>
+
+        <!-- Semantic Custom Element -->
+        <highlight-box> <!-- custom semantic element -->
+            <h2>Key Concepts</h2> <!-- h2 tag -->
+            <ul>
+                <li>Semantic HTML improves accessibility and SEO.</li>
+                <li>CSS provides structure without heavy styling.</li>
+                <li>Custom elements enhance maintainability.</li>
+            </ul>
+        </highlight-box>
 
         <section>
             <h2>Featured Projects</h2>
-            <article>
-                <h3>Project 1</h3>
-                <p>Description of <b>project 1</b>.</p>
+            <article> <!-- article tag -->
+                <h3>Project 1</h3> <!-- h3 tag -->
+                <p>Description of <b>project 1</b>.</p> <!-- b tag -->
                 <a href="#">View Project</a>
             </article>
 
             <article>
                 <h3>Project 2</h3>
-                <p>Description of <i>project 2</i>.</p>
+                <p>Description of <i>project 2</i>.</p> <!-- i tag -->
                 <a href="#">View Project</a>
             </article>
         </section>
 
-        <aside>
+        <aside> <!-- aside tag -->
             <h2>Quick Facts</h2>
-            <p><dfn title="University of California, San Diego">UCSD</dfn> research projects in computer graphics and machine learning.</p>
+            <p><dfn title="University of California, San Diego">UCSD</dfn> research projects in computer graphics and machine learning.</p> <!-- dfn tag -->
         </aside>
 
         <section>
             <h2>Experiments</h2>
-            <details>
-                <summary>Click to Expand</summary>
+            <details> <!-- details tag -->
+                <summary>Click to Expand</summary> <!-- summary tag -->
                 <p>This section demonstrates various HTML tags.</p>
-                <hr>
-                <blockquote cite="https://www.example.com">"The best way to predict the future is to invent it."</blockquote>
-                <figure>
-                    <img src="example.jpg" alt="Example Image">
-                    <figcaption>Sample Image Caption</figcaption>
+                <hr> <!-- hr tag -->
+                <blockquote cite="https://www.example.com">"The best way to predict the future is to invent it."</blockquote> <!-- blockquote tag -->
+                <figure> <!-- figure tag -->
+                    <img src="example.jpg" alt="Example Image"> <!-- img tag -->
+                    <figcaption>Sample Image Caption</figcaption> <!-- figcaption tag -->
                 </figure>
-                <pre><code>console.log('Code Block Example');</code></pre>
-                <table>
-                    <caption>Sample Table</caption>
-                    <colgroup>
-                        <col span="2">
+                <pre><code>console.log('Code Block Example');</code></pre> <!-- pre, code tags -->
+                <table> <!-- table tag -->
+                    <caption>Sample Table</caption> <!-- caption tag -->
+                    <colgroup> <!-- colgroup tag -->
+                        <col span="2"> <!-- col tag -->
                     </colgroup>
-                    <tr><th>Item</th><th>Value</th></tr>
-                    <tr><td>HTML</td><td>Markup Language</td></tr>
+                    <tr> <!-- tr tag -->
+                        <th>Item</th> <!-- th tag -->
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td> <!-- td tag -->
+                        <td>Markup Language</td>
+                    </tr>
                 </table>
-                <form>
-                    <fieldset>
-                        <legend>Contact Form</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
+                <form> <!-- form tag -->
+                    <fieldset> <!-- fieldset tag -->
+                        <legend>Contact Form</legend> <!-- legend tag -->
+                        <label for="name">Name:</label> <!-- label tag -->
+                        <input type="text" id="name" name="name"> <!-- input tag -->
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message"></textarea>
-                        <button type="submit">Submit</button>
+                        <textarea id="message" name="message"></textarea> <!-- textarea tag -->
+                        <button type="submit">Submit</button> <!-- button tag -->
                     </fieldset>
                 </form>
-                <select>
-                    <optgroup label="Skills">
-                        <option value="html">HTML</option>
+                <select> <!-- select tag -->
+                    <optgroup label="Skills"> <!-- optgroup tag -->
+                        <option value="html">HTML</option> <!-- option tag -->
                         <option value="css">CSS</option>
                         <option value="js">JavaScript</option>
                     </optgroup>
                 </select>
-                <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
-                <svg width="100" height="100">
-                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas> <!-- canvas tag -->
+                <svg width="100" height="100"> <!-- svg tag -->
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
                 </svg>
-                <template>
+                <template> <!-- template tag -->
                     <p>This is a template content.</p>
                 </template>
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math xmlns="http://www.w3.org/1998/Math/MathML"> <!-- math tag -->
                     <msup><mi>E</mi><mn>=</mn></msup>
                     <mi>mc</mi><msup><mn>2</mn></msup>
                 </math>
@@ -103,25 +118,22 @@
         </section>
     </main>
 
-    <footer>
-        <address>Contact me at <a href="mailto:email@example.com">email@example.com</a></address>
+    <footer> <!-- footer tag -->
+        <address>Contact me at <a href="mailto:email@example.com">email@example.com</a></address> <!-- address tag -->
     </footer>
 
-    <!-- Custom Elements -->
-    <semantic-box>Semantic Custom Element Example</semantic-box>
-
-    <script>
+    <script> <!-- script tag -->
         class HelloWorld extends HTMLElement {
             constructor() {
                 super();
-                console.log("Hello world!");
+                console.log("Hello world!"); // Logs message to console
             }
         }
         customElements.define('hello-world', HelloWorld);
     </script>
 
-    <hello-world></hello-world>
+    <hello-world></hello-world> <!-- custom element -->
 
-    <noscript>Your browser does not support JavaScript!</noscript>
+    <noscript>Your browser does not support JavaScript!</noscript> <!-- noscript tag -->
 </body>
 </html>
