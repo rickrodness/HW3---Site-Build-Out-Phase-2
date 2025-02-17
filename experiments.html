@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiments</title>
+    <title>Experiments - Rick Rodness</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,53 +17,58 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="experiments.html" class="active">Experiments</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>HTML Experiments</h1>
-        <p>Welcome to the experiments page! This section showcases various HTML tags and custom elements.</p>
+    <!-- Fun Hero Section -->
+    <section class="experiment-hero">
+        <h1>⚡ Fun HTML & CSS Experiments ⚡</h1>
+        <p>Testing out unique HTML elements, MathML, SVGs, and more!</p>
+    </section>
 
+    <main class="experiment-container">
         <!-- Custom Semantic Element -->
         <highlight-box>
-            <h2>Semantic Custom Element Example</h2>
-            <p>This box is a custom semantic element.</p>
+            <h2>Custom Semantic Element</h2>
+            <p>This box is a **custom element** styled with CSS.</p>
         </highlight-box>
 
         <!-- MathML Example -->
-        <h2>MathML Example</h2>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <mrow>
-                <mi>E</mi>
-                <mo>=</mo>
+        <section class="experiment-section">
+            <h2>🧮 MathML Formula</h2>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <mrow>
-                    <mi>m</mi>
-                    <msup>
-                        <mi>c</mi>
-                        <mn>2</mn>
-                    </msup>
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mrow>
+                        <mi>m</mi>
+                        <msup>
+                            <mi>c</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mrow>
                 </mrow>
-            </mrow>
-        </math>
+            </math>
+        </section>
 
-        <!-- Additional HTML Elements -->
-        <section>
-            <h2>Miscellaneous HTML Tags</h2>
+        <!-- Miscellaneous HTML Elements -->
+        <section class="experiment-section">
+            <h2>🔍 Interactive HTML Elements</h2>
 
             <details>
                 <summary>Click to Expand Details</summary>
-                <p>This tag shows collapsible content.</p>
+                <p>This tag allows collapsible content.</p>
             </details>
 
             <blockquote cite="https://www.example.com">
-                "The farmer never plants if he waits for perfection."
+                "The best way to predict the future is to invent it."
             </blockquote>
 
             <figure>
-                <img src="example.jpg" alt="Example Image" width="200">
-                <figcaption>Example Caption</figcaption>
+                <img src="images/example.jpg" alt="Example Image" width="250">
+                <figcaption>Styled Image Caption</figcaption>
             </figure>
 
             <pre><code>&lt;h1&gt;This is preformatted code&lt;/h1&gt;</code></pre>
@@ -73,12 +80,26 @@
                 <dd>Cascading Style Sheets</dd>
             </dl>
         </section>
+
+        <!-- SVG & Canvas Section -->
+        <section class="experiment-section">
+            <h2>🎨 SVG & Canvas Graphics</h2>
+
+            <!-- Canvas Example -->
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+
+            <!-- SVG Example -->
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
     </main>
 
     <footer>
-        <address>Contact me at <a href="mailto:email@example.com">rrodness@ucsd.edu</a></address>
+        <p>📩 Contact: <a href="mailto:rrodness@ucsd.edu">rrodness@ucsd.edu</a></p>
     </footer>
 
+    <!-- Custom Element Script -->
     <script>
         class HelloWorld extends HTMLElement {
             constructor() {
@@ -91,4 +112,5 @@
 
     <noscript>Your browser does not support JavaScript!</noscript>
 </body>
+
 </html>
